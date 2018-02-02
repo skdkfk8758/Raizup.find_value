@@ -16,15 +16,16 @@
 
 <div>
     <ul>
-        <?php if($is_text) { ?>
+        <?php if($is_text == true) { ?>
             <?php foreach ($search_data as $result) { ?>
                 <li>
                     <?php echo $result->korean_value?> =>
                     <?php echo $result->english_value?>
                 </li>
             <?php } ?>
-        <?php } else  { ?>
-            <p>검색어가 없습니다</p>
+        <?php } else { ?>
+            <li>검색어가 없습니다</li>
         <?php } ?>
+
     </ul>
 </div>
